@@ -1,5 +1,6 @@
 var React = require('react');
 var $ = require('jquery');
+var Marquee = require('react-marquee');
 
 var baseUrl = 'https://www-s.acm.illinois.edu/beats/1104/';
 var nowPlayingUrl = baseUrl + 'v1/now_playing';
@@ -93,8 +94,8 @@ var BeatsPanel = React.createClass({
                     <div className="beats-title">
                         {nowPlaying.media.title}
                     </div>
-                    <div>{nowPlaying.media.album}</div>
-                    <div>{nowPlaying.media.artist}</div>
+                    <Marquee hoverToStop={true} className="beats-marquee" text={nowPlaying.media.album}/>
+                    <Marquee hoverToStop={true} className="beats-marquee" text={nowPlaying.media.artist}/>
                     <p>{elapsedStr} / {durationStr}</p>
                     <p>acm.illinois.edu/beats/1104/</p>
                 </div>

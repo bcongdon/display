@@ -26,6 +26,7 @@
         "react": "0.14.x",
         "react-dom": "0.14.x",
         "react-grid-layout": "0.13.x",
+        "react-marquee": "0.1.x",
         "vinyl-source-stream": "1.1.x"
     }
 }
